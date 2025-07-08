@@ -1,4 +1,5 @@
 const $gameArea = document.getElementById('gameArea');
+const $btnStart = document.getElementById('btnStart');
 
 // const element = document.createElement("p");
 // element.classList.add("position")
@@ -48,12 +49,14 @@ function createBubble(){
 
 }
 
-document.addEventListener("keydown", (e) => {
-    if(e.code === "Enter"){
+$btnStart.addEventListener("click", (e) => {
+    $gameArea.style.display = "block"
+    $btnStart.style.display = "none"
+    
         rain = setInterval(() => {
     createBubble()
 }, 500)
-    }
+    
 })
 
 
