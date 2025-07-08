@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+#gameArea{
+    background-color: #222222;
+    display: block;
+    height: 400px;
+    width: 600px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.position{
+    background-color: white;
+    color: black;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    margin: 0;
+}
+
+.bubble{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 60px;
+    background-color: aqua;
+
+}
