@@ -14,7 +14,7 @@ let rain = undefined;
 //     element.innerHTML = `position x: ${mousePos.x} y: ${mousePos.y}`;
 // })
 
-$gameArea.addEventListener(["touchstart"], (e) => {
+$gameArea.addEventListener("touchstart", (e) => {
   if (e.target.classList.contains("bubble")) {
     $gameArea.removeChild(e.target);
   }
