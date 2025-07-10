@@ -15,7 +15,7 @@ let rain = undefined;
 // })
 
 $gameArea.addEventListener("touchstart", (e) => {
-  if (e.target.classList.contains("bubble")) {
+  if (e.target.parentNode.classList.contains("bubble")) {
     $gameArea.removeChild(e.target);
   }
 });
